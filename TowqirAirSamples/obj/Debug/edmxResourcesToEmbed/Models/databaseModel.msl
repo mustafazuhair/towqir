@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestTModelStoreContainer" CdmEntityContainer="TestTEntities">
+    <EntitySetMapping Name="Table_1">
+      <EntityTypeMapping TypeName="TestTModel.Table_1">
+        <MappingFragment StoreEntitySet="Table_1">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="O3" ColumnName="O3" />
+          <ScalarProperty Name="PM10" ColumnName="PM10" />
+          <ScalarProperty Name="pKey" ColumnName="pKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YearlyResult">
+      <EntityTypeMapping TypeName="TestTModel.YearlyResult">
+        <MappingFragment StoreEntitySet="YearlyResult">
+          <ScalarProperty Name="pKey" ColumnName="pKey" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="O3_2000" ColumnName="O3_2000" />
+          <ScalarProperty Name="O3_2001" ColumnName="O3_2001" />
+          <ScalarProperty Name="O3_2002" ColumnName="O3_2002" />
+          <ScalarProperty Name="O3_2003" ColumnName="O3_2003" />
+          <ScalarProperty Name="O3_2004" ColumnName="O3_2004" />
+          <ScalarProperty Name="O3_2005" ColumnName="O3_2005" />
+          <ScalarProperty Name="O3_2006" ColumnName="O3_2006" />
+          <ScalarProperty Name="O3_2007" ColumnName="O3_2007" />
+          <ScalarProperty Name="O3_2008" ColumnName="O3_2008" />
+          <ScalarProperty Name="O3_2009" ColumnName="O3_2009" />
+          <ScalarProperty Name="O3_2010" ColumnName="O3_2010" />
+          <ScalarProperty Name="O3_2011" ColumnName="O3_2011" />
+          <ScalarProperty Name="O3_2012" ColumnName="O3_2012" />
+          <ScalarProperty Name="O3_2013" ColumnName="O3_2013" />
+          <ScalarProperty Name="O3_2014" ColumnName="O3_2014" />
+          <ScalarProperty Name="O3_2015" ColumnName="O3_2015" />
+          <ScalarProperty Name="PM10_2000" ColumnName="PM10_2000" />
+          <ScalarProperty Name="PM10_2001" ColumnName="PM10_2001" />
+          <ScalarProperty Name="PM10_2002" ColumnName="PM10_2002" />
+          <ScalarProperty Name="PM10_2003" ColumnName="PM10_2003" />
+          <ScalarProperty Name="PM10_2004" ColumnName="PM10_2004" />
+          <ScalarProperty Name="PM10_2005" ColumnName="PM10_2005" />
+          <ScalarProperty Name="PM10_2006" ColumnName="PM10_2006" />
+          <ScalarProperty Name="PM10_2007" ColumnName="PM10_2007" />
+          <ScalarProperty Name="PM10_2008" ColumnName="PM10_2008" />
+          <ScalarProperty Name="PM10_2009" ColumnName="PM10_2009" />
+          <ScalarProperty Name="PM10_2010" ColumnName="PM10_2010" />
+          <ScalarProperty Name="PM10_2011" ColumnName="PM10_2011" />
+          <ScalarProperty Name="PM10_2012" ColumnName="PM10_2012" />
+          <ScalarProperty Name="PM10_2013" ColumnName="PM10_2013" />
+          <ScalarProperty Name="PM10_2014" ColumnName="PM10_2014" />
+          <ScalarProperty Name="PM10_2015" ColumnName="PM10_2015" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthAverage">
+      <EntityTypeMapping TypeName="TestTModel.MonthAverage">
+        <MappingFragment StoreEntitySet="MonthAverage">
+          <ScalarProperty Name="PM10_Dec" ColumnName="PM10_Dec" />
+          <ScalarProperty Name="PM10_Nov" ColumnName="PM10_Nov" />
+          <ScalarProperty Name="PM10_Oct" ColumnName="PM10_Oct" />
+          <ScalarProperty Name="PM10_Sep" ColumnName="PM10_Sep" />
+          <ScalarProperty Name="PM10_Aug" ColumnName="PM10_Aug" />
+          <ScalarProperty Name="PM10_Jul" ColumnName="PM10_Jul" />
+          <ScalarProperty Name="PM10_Jun" ColumnName="PM10_Jun" />
+          <ScalarProperty Name="PM10_May" ColumnName="PM10_May" />
+          <ScalarProperty Name="PM10_Apr" ColumnName="PM10_Apr" />
+          <ScalarProperty Name="PM10_Mar" ColumnName="PM10_Mar" />
+          <ScalarProperty Name="PM10_Feb" ColumnName="PM10_Feb" />
+          <ScalarProperty Name="PM10_Jan" ColumnName="PM10_Jan" />
+          <ScalarProperty Name="O3_Dec" ColumnName="O3_Dec" />
+          <ScalarProperty Name="O3_Nov" ColumnName="O3_Nov" />
+          <ScalarProperty Name="O3_Oct" ColumnName="O3_Oct" />
+          <ScalarProperty Name="O3_Sep" ColumnName="O3_Sep" />
+          <ScalarProperty Name="O3_Aug" ColumnName="O3_Aug" />
+          <ScalarProperty Name="O3_Jul" ColumnName="O3_Jul" />
+          <ScalarProperty Name="O3_Jun" ColumnName="O3_Jun" />
+          <ScalarProperty Name="O3_May" ColumnName="O3_May" />
+          <ScalarProperty Name="O3_Apr" ColumnName="O3_Apr" />
+          <ScalarProperty Name="O3_Mar" ColumnName="O3_Mar" />
+          <ScalarProperty Name="O3_Feb" ColumnName="O3_Feb" />
+          <ScalarProperty Name="O3_Jan" ColumnName="O3_Jan" />
+          <ScalarProperty Name="RYear" ColumnName="RYear" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="pKey" ColumnName="pKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

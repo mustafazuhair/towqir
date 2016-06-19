@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestTModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="TestTModelStoreContainer">
+    <EntitySet Name="MonthAverage" EntityType="TestTModel.Store.MonthAverage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table_1" EntityType="TestTModel.Store.Table_1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="YearlyResult" EntityType="TestTModel.Store.YearlyResult" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="MonthAverage">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Name="pKey" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="int" />
+    <Property Name="RYear" Type="int" />
+    <Property Name="O3_Jan" Type="decimal" Scale="5" />
+    <Property Name="O3_Feb" Type="decimal" Scale="5" />
+    <Property Name="O3_Mar" Type="decimal" Scale="5" />
+    <Property Name="O3_Apr" Type="decimal" Scale="5" />
+    <Property Name="O3_May" Type="decimal" Scale="5" />
+    <Property Name="O3_Jun" Type="decimal" Scale="5" />
+    <Property Name="O3_Jul" Type="decimal" Scale="5" />
+    <Property Name="O3_Aug" Type="decimal" Scale="5" />
+    <Property Name="O3_Sep" Type="decimal" Scale="5" />
+    <Property Name="O3_Oct" Type="decimal" Scale="5" />
+    <Property Name="O3_Nov" Type="decimal" Scale="5" />
+    <Property Name="O3_Dec" Type="decimal" Scale="5" />
+    <Property Name="PM10_Jan" Type="decimal" Scale="5" />
+    <Property Name="PM10_Feb" Type="decimal" Scale="5" />
+    <Property Name="PM10_Mar" Type="decimal" Scale="5" />
+    <Property Name="PM10_Apr" Type="decimal" Scale="5" />
+    <Property Name="PM10_May" Type="decimal" Scale="5" />
+    <Property Name="PM10_Jun" Type="decimal" Scale="5" />
+    <Property Name="PM10_Jul" Type="decimal" Scale="5" />
+    <Property Name="PM10_Aug" Type="decimal" Scale="5" />
+    <Property Name="PM10_Sep" Type="decimal" Scale="5" />
+    <Property Name="PM10_Oct" Type="decimal" Scale="5" />
+    <Property Name="PM10_Nov" Type="decimal" Scale="5" />
+    <Property Name="PM10_Dec" Type="decimal" Scale="5" />
+  </EntityType>
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Name="Date" Type="nchar" MaxLength="10" />
+    <Property Name="Time" Type="nchar" MaxLength="10" />
+    <Property Name="O3" Type="nchar" MaxLength="10" />
+    <Property Name="PM10" Type="nchar" MaxLength="10" />
+    <Property Name="pKey" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="YearlyResult">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Name="pKey" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="int" />
+    <Property Name="O3_2000" Type="decimal" Scale="4" />
+    <Property Name="O3_2001" Type="decimal" Scale="4" />
+    <Property Name="O3_2002" Type="decimal" Scale="4" />
+    <Property Name="O3_2003" Type="decimal" Scale="4" />
+    <Property Name="O3_2004" Type="decimal" Scale="4" />
+    <Property Name="O3_2005" Type="decimal" Scale="4" />
+    <Property Name="O3_2006" Type="decimal" Scale="4" />
+    <Property Name="O3_2007" Type="decimal" Scale="4" />
+    <Property Name="O3_2008" Type="decimal" Scale="4" />
+    <Property Name="O3_2009" Type="decimal" Scale="4" />
+    <Property Name="O3_2010" Type="decimal" Scale="4" />
+    <Property Name="O3_2011" Type="decimal" Scale="4" />
+    <Property Name="O3_2012" Type="decimal" Scale="4" />
+    <Property Name="O3_2013" Type="decimal" Scale="4" />
+    <Property Name="O3_2014" Type="decimal" Scale="4" />
+    <Property Name="O3_2015" Type="decimal" Scale="4" />
+    <Property Name="PM10_2000" Type="decimal" Scale="4" />
+    <Property Name="PM10_2001" Type="decimal" Scale="4" />
+    <Property Name="PM10_2002" Type="decimal" Scale="4" />
+    <Property Name="PM10_2003" Type="decimal" Scale="4" />
+    <Property Name="PM10_2004" Type="decimal" Scale="4" />
+    <Property Name="PM10_2005" Type="decimal" Scale="4" />
+    <Property Name="PM10_2006" Type="decimal" Scale="4" />
+    <Property Name="PM10_2007" Type="decimal" Scale="4" />
+    <Property Name="PM10_2008" Type="decimal" Scale="4" />
+    <Property Name="PM10_2009" Type="decimal" Scale="4" />
+    <Property Name="PM10_2010" Type="decimal" Scale="4" />
+    <Property Name="PM10_2011" Type="decimal" Scale="4" />
+    <Property Name="PM10_2012" Type="decimal" Scale="4" />
+    <Property Name="PM10_2013" Type="decimal" Scale="4" />
+    <Property Name="PM10_2014" Type="decimal" Scale="4" />
+    <Property Name="PM10_2015" Type="decimal" Scale="4" />
+  </EntityType>
+</Schema>

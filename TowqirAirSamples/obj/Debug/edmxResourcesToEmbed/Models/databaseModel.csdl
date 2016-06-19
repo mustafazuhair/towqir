@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestTModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="TestTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_1" EntityType="TestTModel.Table_1" />
+    <EntitySet Name="YearlyResult" EntityType="TestTModel.YearlyResult" />
+    <EntitySet Name="MonthAverage" EntityType="TestTModel.MonthAverage" />
+  </EntityContainer>
+  <EntityType Name="Table_1">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Name="Date" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Time" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="O3" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="PM10" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="pKey" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="YearlyResult">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Name="pKey" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="O3_2000" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2001" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2002" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2003" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2004" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2005" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2006" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2007" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2008" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2009" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2010" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2011" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2012" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2013" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2014" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="O3_2015" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2000" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2001" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2002" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2003" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2004" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2005" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2006" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2007" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2008" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2009" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2010" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2011" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2012" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2013" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2014" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="PM10_2015" Type="Decimal" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityType Name="MonthAverage">
+    <Key>
+      <PropertyRef Name="pKey" />
+    </Key>
+    <Property Type="Int64" Name="pKey" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="StationID" />
+    <Property Type="Int32" Name="RYear" />
+    <Property Type="Decimal" Name="O3_Jan" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Feb" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Mar" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Apr" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_May" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Jun" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Jul" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Aug" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Sep" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Oct" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Nov" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="O3_Dec" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Jan" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Feb" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Mar" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Apr" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_May" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Jun" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Jul" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Aug" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Sep" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Oct" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Nov" Precision="18" Scale="5" />
+    <Property Type="Decimal" Name="PM10_Dec" Precision="18" Scale="5" />
+  </EntityType>
+</Schema>
